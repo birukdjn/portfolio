@@ -1,0 +1,144 @@
+
+
+header .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .navbars{
+    display: flex;
+    gap: 2.7em;
+    margin-right: 1.8em;
+    
+}
+.navbars li a{
+    color: var(--main-color);
+    font-size: 1.5em;
+    transition: .5s ease-in-out;
+    
+
+}
+.navbars li{
+    transition: .5s ease-in-out;
+
+}
+.navbars li:hover{
+    transform: scale(1.4);
+}
+.navbars li a:hover{
+color: var(--hover-color);
+font-weight: 700;
+
+
+}   
+
+.fa-bars{
+    display: none;
+
+}
+#close { 
+    display: none;}
+
+.navbars {
+    display: none;
+   
+}
+.navbars.active {
+    display: flex;
+    flex-direction: column;
+} 
+@media(max-width:768px){
+      header{
+        display: flex;
+        align-items: start;
+    }
+    .logo{
+        display: block;
+    }
+    header .navbar{
+       position: absolute;
+        right: 0;
+        top: 0;
+        line-height: 1.5em;
+        display: block;
+        width: max-content;
+        padding: 20px;
+        border-radius: 0 20px;
+        background-color: rgba(79, 10, 136, 0.644);
+
+    }
+    header .navbar ul{
+        display: none;
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .navbar ul li a{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        gap: 1em;
+
+    }
+    .navbars {
+        padding-top: 2em;
+        display: none; /* Ensure it is hidden initially */
+    }
+    
+    .navbars.active {
+       
+        display: flex; /* Show when active */
+       
+    }
+   
+    #bars{
+        display: block;
+        margin: auto;
+        font-size: 2em;
+        cursor: pointer;
+    }
+   
+    #close{
+        margin:auto;
+        font-size: 2em;
+        display: none;
+        cursor: pointer;
+    }
+    #close.active {
+        display: block;
+      }
+      #bars.active {
+        display: none;
+      }
+     section{
+        margin: 1em;
+    
+     }
+     .large{
+        font-size: 2em;
+        margin-top: 2em;
+        
+    
+        
+    }
+    #home h1{
+        margin-bottom: .5em;
+    }
+     .left h2{
+        font-size: 1em;
+     }
+     .btns {
+        margin: auto 0 auto -1em;
+     }
+     .links{
+        width: 100%;
+        display: flex;
+        justify-items: center;
+     }
+
+
+
+
+
+    }
+
+

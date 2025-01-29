@@ -1,0 +1,24 @@
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.small{
+    font-size: smaller;
+}
+
+.center{
+    text-align: center;
+}
+.large{
+    font-size: 3em;
+}
+.space{
+    justify-content: space-between;
+}
+.block{
+    display: block;
+}
