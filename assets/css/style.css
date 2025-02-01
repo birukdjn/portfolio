@@ -231,7 +231,7 @@ transform: scale(1.1,1.1);
 
 
 
-.service{
+.service {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -241,14 +241,13 @@ transform: scale(1.1,1.1);
 
 } 
 
-.service div{
-    
-    width: 600px;
-    height: 250px;
+.service div {
+    justify-content: center;
+     width: 47%;
     background-color: #333333b2;
     padding: 1.5em;
     gap: 2em;
- 
+
     
 
 
@@ -364,6 +363,9 @@ transform: scale(1.1,1.1);
     flex-direction: row;
 }
   .adila .left{
+
+    justify-content: center;
+    margin: auto;
   text-align: justify;
     width: 47%;
     height: 100%;
