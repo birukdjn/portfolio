@@ -138,7 +138,13 @@ font-weight: 700;
 
 
 
-
+    .adila .left, .adila .right img{
+        width: 100%;
     }
 
+    .service div{
+        width: 100%;
+    }
+
+    }
 
