@@ -254,29 +254,14 @@ transform: scale(1.1,1.1);
 
 }
 
-.service-leftup h3{
-    text-align: center;
+.service-leftup h3,
+.service-rightup h3,
+.service-leftdwn h3,
+.service-rightdwn{
+  text-align: center;
     font-size: 1.5em;
+    margin-bottom: .5em;
 }
-
-
-.service-rightup h3{
-    text-align: center;
-    font-size: 1.5em;
-
-}
-.service-leftdwn h3{
-    text-align: center;
-    font-size: 1.5em;
-
-}
-.service-rightdwn h3{
-    text-align: center;
-    font-size: 1.5em;
-
-
-}
-
   
   .skills-section {
     max-width: 600px;
