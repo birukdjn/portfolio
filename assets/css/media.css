@@ -126,9 +126,7 @@ font-weight: 700;
      .left h2{
         font-size: 1em;
      }
-     .btns {
-        margin: auto 0 auto -1em;
-     }
+     
      .links{
         width: 100%;
         display: flex;
