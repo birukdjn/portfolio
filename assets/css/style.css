@@ -53,7 +53,7 @@ header{display: flex;
 }
 
 section {
-    margin: 1em 2em 1em 2em;
+    margin: .1em 2em .1em 2em;
 
 }
 
@@ -169,11 +169,12 @@ transform: scale(1.1,1.1);
     box-shadow: 2px 2px 24px #fff;
     background:rgb(115, 21, 204);
 }
-#aboutme h1, #contact h1{
-    margin-bottom: .3em;
+
+#home h1, #services h1, #portfolio h1, #contact h1, #aboutme h1  {
+    margin: 1.61em 0 .51em 0;
 }
-#home h1, #services h1, #portfolio h1 {
-    margin-bottom: 1em;
+#aboutme h1{
+  margin-bottom: 0;
 }
 
 .aboutme{
@@ -337,20 +338,20 @@ transform: scale(1.1,1.1);
   }
   
   .education-details h3 {
-    font-size: 25px;
+    font-size: 23px;
     margin: 0;
     color: #fff;
     text-align: start;
   }
   
   .education-details p {
-    font-size: 22px;
+    font-size: 20px;
     color: #fff;
     margin: 5px 0;
   }
   
   .education-details span {
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     font-style: italic;
   }
@@ -386,3 +387,61 @@ transform: scale(1.1,1.1);
 
 
   }
+
+  .contact{
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #333333b2;
+    justify-content: center;
+    padding: 2em;
+    align-items: center;
+    margin-bottom: 4em;
+  }
+  
+  
+  .contact .right form{
+    width: 100%}
+  .right label{
+    font-size: 1.5em;
+  }
+  input,  textarea{
+    margin: .51em 0;
+    display: flex;
+    width: 150%;
+    color: black;
+    font-size: .91em;
+    
+  }
+  button{
+    color: #fff;
+    background-color: var(--hover-color);
+    padding: .41em;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease ;
+    border: none;
+   
+  }
+  button:hover{
+    background-color: rgb(175, 105, 241);
+   
+  }
+  button:active{
+    transform: scale(1.1);
+  }
+
+  .contact .left {
+    padding-right: 5em;
+    width: 50%;
+    p{
+      font-size: 1em;
+    }
+    h2{
+      margin: 0;
+    }
+  }
+  
+
