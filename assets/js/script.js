@@ -22,11 +22,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-// document.getElementById("bars").addEventListener("click", function () {
-//   document.querySelector(".navbars").classList.toggle("show");
-// });
-// document.getElementById("close").addEventListener("click", function () {
-//   document.querySelector(".navbars").classList.remove("show");
-// });
-
