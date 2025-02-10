@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   const humbergermenu = document.getElementById('bars');
   const closemenu = document.getElementById('close');
@@ -17,3 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
       closemenu.style.display = 'none';      // Correctly hide the close icon
   });
 });
+
+
+
+
+
+// document.getElementById("bars").addEventListener("click", function () {
+//   document.querySelector(".navbars").classList.toggle("show");
+// });
+// document.getElementById("close").addEventListener("click", function () {
+//   document.querySelector(".navbars").classList.remove("show");
+// });
+
