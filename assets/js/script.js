@@ -20,5 +20,32 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const navbar = document.querySelector(".navbar");
+  const barsIcon = document.getElementById("bars");
+  const closeIcon = document.getElementById("close");
+  
+  if (window.innerWidth <= 768) {
+      navbar.classList.add("collapsed");
+      closeIcon.style.display = "none";
+  }
+
+  barsIcon.addEventListener("click", () => {
+      navbar.classList.remove("collapsed");
+      barsIcon.style.display = "none";
+      closeIcon.style.display = "block";
+  });
+  
+  closeIcon.addEventListener("click", () => {
+      navbar.classList.add("collapsed");
+      closeIcon.style.display = "none";
+      barsIcon.style.display = "block";
+  });
+ });
+
+
+
+
+
 
 
