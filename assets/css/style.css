@@ -146,6 +146,7 @@ transform: scale(1.1,1.1);
     width: max-content;
     height: max-content;
 }
+
 .fa{ 
     display: flex;
     color: rgb(255, 255, 255);
@@ -257,10 +258,10 @@ transform: scale(1.1,1.1);
 .service-leftup h3,
 .service-rightup h3,
 .service-leftdwn h3,
-.service-rightdwn{
+.service-rightdwn h3{
   text-align: center;
     font-size: 1.5em;
-    margin-bottom: .5em;
+   
 }
   
   .skills-section {
@@ -454,3 +455,92 @@ transform: scale(1.1,1.1);
      
 
 }
+.services{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.s-icon{
+  text-align: center;
+  font-size: 4em;
+ 
+  
+}
+.soft .progress-bar .progress{
+background-color: rgb(19, 40, 231);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the remaining sections */
+ gap: 3em;
+ 
+}
+
+.footer-section {
+  
+  padding: 10px;
+  min-width: 400px;
+  
+ 
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  color: #af02ff;
+  transition: .3s;
+}
+
+
+
+
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+.back-to-top {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+ .fa{
+  padding: 1.5em 1em;
+
+ }
+}
+
+.back-to-top:hover {
+  color: #af02ff;
+}
+.footer-section .center{
+  margin: 2em auto;
+}  
