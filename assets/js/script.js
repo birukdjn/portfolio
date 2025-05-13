@@ -189,3 +189,25 @@ function showDailyPlan() {
 
   // Call when page loads
 document.addEventListener('DOMContentLoaded', showDailyPlan);
+
+document.addEventListener('DOMContentLoaded', function() {
+  const backToTop = document.querySelector('.back-to-top');
+  
+  // Show/hide button on scroll
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      backToTop.classList.add('show');
+    } else {
+      backToTop.classList.remove('show');
+    }
+  });
+  
+  // Smooth scroll to top
+  backToTop.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});

@@ -26,34 +26,36 @@ body{
 header{display: flex;
     position: fixed;
     width: 100%;
-    top: 0;
     color: var(--main-color);
     justify-content: space-between;
     background-color:#333333b2;
-    padding: 1em;
+    padding: 5px;
     text-align: center;
 }
 .logo{
-    display:flex;
-    font-size: 2em;
-    font-weight: bold;
-    color: var(--main-color);
     align-items: center;
-    gap: 1em;
-}
+    text-align: center;
+    margin-left: 2em;
+    }
+
 .logo img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+    transition: 1s ease-in-out;
+
 }
 .logo h1{
+  
     font-size: 1.5em;
     font-weight: bold;
     color: var(--main-color);
 }
 
 section {
-    margin: .1em 2em .1em 2em;
+    margin: .1em 2em;
 
 }
 
@@ -409,9 +411,13 @@ transform: scale(1.1,1.1);
   input,  textarea{
     margin: .51em 0;
     display: flex;
-    width: 150%;
+    width: 100%;
+    padding: 5px;
     color: black;
-    font-size: .91em;
+    font-size: 1em;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #cfcfcf;
     
   }
   button{
@@ -452,7 +458,7 @@ transform: scale(1.1,1.1);
     gap: 1em;
     text-align: start;
     padding-left: 1em;
-     
+    
 
 }
 .services{
@@ -491,7 +497,7 @@ footer {
   padding: 10px;
   min-width: 400px;
   
- 
+
 }
 
 .footer-section h3 {
@@ -527,20 +533,36 @@ footer {
   padding-top: 10px;
 }
 
-.back-to-top {
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 10px;
- .fa{
-  padding: 1.5em 1em;
 
- }
-}
 
-.back-to-top:hover {
-  color: #af02ff;
-}
 .footer-section .center{
   margin: 2em auto;
 }  
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: #8019e0;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background: #3d0066;
+  transform: translateY(-3px);
+}

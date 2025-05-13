@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="description" content="Biruk Dejene - Web Developer Portfolio. Specializing in frontend, backend, and database development.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birukdjn</title>
+    <meta name="author" content="Biruk Dejene">
+    <meta name="keywords" content="Biruk Dejene, Web Developer, Portfolio, Frontend, Backend, Database Development">
+    <meta name="theme-color" content="#000000">
+    <meta name="robots" content="index, follow">
+    <title >Birukdjn</title>
+    <link rel="icon" type="image/png" href="assets/images/favcon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">       
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -16,7 +21,7 @@
   <body>
     <header>
       <div class="logo">
-        <img src="/assets/images/" alt="Birukdjn">
+        <img src="assets/images/logo.png" alt="BR">
       </div>  
       <nav class="navbar collapsed">
         <i id="bars" class= "fa-solid fa-bars" onclick="toggleSidebar()"> </i>
@@ -288,7 +293,7 @@
             <h3 class="block">Adila Hotel</h3>
             <span class="flex space adila">
               <span class="left">
-                <p>I developed a dynamic website for Adila Hotel to enhance its online presence and improve customer engagement.  The project focused on providing a seamless user experience for booking services and accessing hotel information.</p>
+                <p>I designed and developed a dynamic website for Adila Hotel to enhance its online presence and improve customer engagement.  The project focused on providing a seamless user experience for booking services and accessing hotel information 24 hours in a day and 7 days in a week.</p>
               </span>
               <span class="image">
                 <img src="/assets/images/adila.png" alt="adila hotel">
@@ -297,29 +302,57 @@
             </span>
           </a>
           </div>
+          <div class="service-rightup">
+          <a href="https://wachemo.netlify.app" target="_blank" rel="noopener noreferrer">
+            <h3 class="block">Wachemo SaPS</h3>
+            <span class="flex space adila">
+              <span class="left">
+                <p>I developed a responsive website for Wachemo Secondary and Preparatory School to strengthen its online presence and improve communication with students, parents, and staff. The project focused on providing easy access to academic resources, event updates, and school announcements.</p>
+              </span>
+              <span class="image">
+                <img src="/assets/images/wachemo.png" alt="wachemo">
+                <h4 style="margin-top: .5em; color:red;" >visit now</h4>
+              </span>
+            </span>
+          </a>
+          </div>
+          <div class="service-leftdwn">
+          <a href="https://cosmotics.netlify.app" target="_blank" rel="noopener noreferrer">
+            <h3 class="block"> BR Cosmetics</h3>
+            <span class="flex space adila">
+              <span class="left">
+                <p>I designed and developed an e-commerce website for BR Cosmetics to enhance its online retail presence and improve customer shopping experiences. The project focused on creating a seamless platform for browsing products, secure checkout, and personalized beauty recommendations.</p>
+              </span>
+              <span class="image">
+                <img src="/assets/images/cosmotics.png" alt="BR Cosmetics">
+                <h4 style="margin-top: .5em; color:red;" >visit now</h4>
+              </span>
+            </span>
+          </a>
+          </div>
           <div class="service-rightup"> 
-            <a href="https://adilahotel.netlify.app" target="_blank" rel="noopener noreferrer">
+            <a href="https://niftalem.netlify.app" target="_blank" rel="noopener noreferrer">
               <h3 class="block">Choir Photo Gallety</h3>
               <span class="flex space adila">
                 <span class="left">
-                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur facere animi debitis, vel distinctio minima consequuntur fuga expedita quam est. Odit nihil error nisi labore quam, perspiciatis praesentium similique hic!</p>
+                  <p>I designed and developed an immersive photo gallery website for Niftalem Choir to showcase their performances, events, and behind-the-scenes moments. The platform features intuitive navigation, high-resolution media displays, and organized archives to preserve and share their musical journey. </p>
                 </span>
                 <span class="image">
-                  <img src="/assets/images/choir.png" alt="choir">
-                  <h4 style="margin-top: .5em; color:red;" >visit now</h4>
+                  <img src="/assets/images/niftalem.png" alt="niftalem">
+                  <h4 style="margin-top: .5em; color:red;">visit now</h4>
                 </span>
               </span>
             </a>
           </div>
           <div class="service-leftup">
-            <a href="https://adilahotel.netlify.app" target="_blank" rel="noopener noreferrer">
+            <a href="https://vitalevent.netlify.app" target="_blank" rel="noopener noreferrer">
               <h3 class="block">Vital Event Registration</h3>
               <span class="flex space adila">
                 <span class="left">
                   <p>I created an efficient website for the Vital Event Registration System to modernize record-keeping and streamline the registration process. The project focused on ensuring accuracy, accessibility, and a user-friendly experience for managing vital records.</p>
                 </span>
                 <span class="image">
-                  <img src="/assets/images/vers.png" alt="vital event">
+                  <img src="/assets/images/vitalevent.png" alt="vital event">
                   <h4 style="margin-top: .5em; color:red;" >visit now</h4>
                 </span>
               </span>
@@ -367,19 +400,18 @@
           
       
         <div class="right">
-          <form id="contact-form" action="email" method="post" >
-            <label for="name">Full Name :
-              <input type="text" name="name">
-            </label> 
-            <label for="email"> Email : 
-              <input type="email" name="email" id="email">
-            </label>
-            <label for="message">message : 
-              <textarea name="message" id="message" cols="20" rows="8"></textarea>
-            </label> 
-            <button type="submit" onclick= message(); >Send Message</button>
-            
-          </form>
+        <form id="contact-form" action="https://formspree.io/f/mldbojbj" method="POST">
+    <label for="name">Full Name:
+        <input type="text" name="name" required>
+    </label>
+    <label for="email">Email:
+        <input type="email" name="email" id="email" required>
+    </label>
+    <label for="message">Message:
+        <textarea name="message" id="message" cols="50" rows="6" required></textarea>
+    </label>
+    <button type="submit">Send Message</button>
+</form>
           <div id="success-message" style="color: green; font-size: 2em;"></div>
         </div>
       </div>
@@ -415,10 +447,11 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; 2025 Biruk Dejene. All rights reserved.</p>
-        <a href="#home" class="back-to-top"><i class="fa fa-arrow-up"></i> Back to Top</a>
-      </div>
     </footer>
-
+<a href="#" class="back-to-top">
+  <i class="fas fa-arrow-up"></i> <!-- Requires Font Awesome -->
+</a>
+      
     <script src="/assets/js/script.js"></script>
 
     </body>
