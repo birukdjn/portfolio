@@ -211,3 +211,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  fetch(this.action, {
+    method: this.method,
+    body: new FormData(this),
+    headers: { 'Accept': 'application/json' }
+  })
+  .then(response => alert('Success!'))
+  .catch(error => alert('Error!'));
+});
