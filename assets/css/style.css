@@ -55,7 +55,8 @@ header{display: flex;
 }
 
 section {
-    margin: .1em 2em;
+    margin: 0 2em;
+    padding: 5em 0 0 0;
 
 }
 
@@ -173,11 +174,9 @@ transform: scale(1.1,1.1);
     background:rgb(115, 21, 204);
 }
 
-#home h1, #services h1, #portfolio h1, #contact h1, #aboutme h1  {
-    margin: 1.61em 0 .51em 0;
-}
+
 #aboutme h1{
-  margin-bottom: 0;
+  margin-bottom: -.5em;
 }
 
 .aboutme{
@@ -488,8 +487,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Center the remaining sections */
- gap: 3em;
- 
+  gap: 3em;
+
 }
 
 .footer-section {
